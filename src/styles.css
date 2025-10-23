@@ -4,7 +4,6 @@
 * {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
-<<<<<<< HEAD
     font-weight: weight;
     font-style: normal;
 }
@@ -31,8 +30,7 @@ button {
     cursor: pointer;
     border: none;
     background: none;
-=======
-    font-weight: <weight>;
+
+    font-weight: weight;
     font-style: normal;
->>>>>>> ba1aa79679156860d1a164ca6e9097b50928a102
 }

@@ -1,21 +1,14 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 import { CommonModule } from '@angular/common';
 import { Tarjeta } from '../../models/tarjeta';
-@Component({
-  selector: 'app-products',
-  imports: [CommonModule],
-=======
 
 @Component({
   selector: 'app-products',
   imports: [],
->>>>>>> ba1aa79679156860d1a164ca6e9097b50928a102
   templateUrl: './products.html',
   styleUrl: './products.css'
 })
 export class Products {
-<<<<<<< HEAD
   // Propiedad pública: Libre acceso a su contenido
   // Privada : Contenido restringido
   public infoTarjeta: Tarjeta[];
@@ -56,7 +49,3 @@ export class Products {
     this.tarjetaSeleccionada = tarjeta
   }
 }
-=======
-
-}
->>>>>>> ba1aa79679156860d1a164ca6e9097b50928a102
