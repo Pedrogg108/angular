@@ -1,0 +1,29 @@
+
+
+.btn-action{
+    background-color: coral;
+    color: white;
+}
+
+#titulo{
+    font-size: 35px;
+    text-align: center;
+    
+}
+.card{
+    margin: 5rem;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    height: 15rem;
+    object-fit: cover;
+}
+
