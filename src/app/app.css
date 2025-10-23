@@ -1,6 +1,7 @@
 #navegador{
     background-color: rgba(163, 255, 250, 0.507);
 }
+<<<<<<< HEAD
 
 .card:hover{
     transform: scale(1.1);
@@ -37,3 +38,5 @@ body{
     padding: 1rem;
     text-align: center;
 }
+=======
+>>>>>>> ba1aa79679156860d1a164ca6e9097b50928a102
