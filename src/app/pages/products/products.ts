@@ -4,7 +4,7 @@ import { Tarjeta } from '../../models/tarjeta';
 
 @Component({
   selector: 'app-products',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './products.html',
   styleUrl: './products.css'
 })
@@ -16,7 +16,7 @@ export class Products {
     this.infoTarjeta = [
       {
         id: "1T",
-        img: "../../../assets/Apple-iphone-14-pro-max-gold-select.png",
+        img: "../../../assets/descarga-_1_.png",
         alt: "",
         titulo: "celu1",
         descripcion: "algo",
@@ -25,7 +25,7 @@ export class Products {
       },
       {
         id: "2T",
-        img: "../../../assets/pexels-changerstudio-140831.jpg",
+        img: "../../../assets/descarga-_1_.png",
         alt: "",
         titulo: "celu2",
         descripcion: "algo2",
@@ -34,7 +34,7 @@ export class Products {
       },
       {
         id: "3T",
-        img: "../../../assets/pexels-mar-neyra-2151796395-32554156.jpg",
+        img: "../../../assets/descarga-_1_.png",
         alt: "",
         titulo: "celu3",
         descripcion: "algo3",

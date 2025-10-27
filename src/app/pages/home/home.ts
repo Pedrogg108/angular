@@ -9,21 +9,36 @@ import { Celular } from '../../models/celular';
 })
 export class Home {
   public infoCelular: Celular[];
-    constructor() {
-      this.infoCelular=[
-        {
-          id:12,
-          nombre:"sd",
-          marca:"dad",
-          descripcion:"celu1",
-          img:"",
-          alt:"celu1"
-
-        }
-      ]
-    }
-    celular: any = null
-    verMas(celularInfo:any){
-    this.celular = celularInfo
+  constructor() {
+    this.infoCelular = [
+      {
+        id: 12,
+        nombre: "celu1",
+        marca: "dad",
+        descripcion: "descripcion1",
+        img: "../../assets/descarga-_1_.png",
+        alt: "celu1"
+      },
+      {
+        id: 22,
+        nombre: "celu2",
+        marca: "dEd",
+        descripcion: "descripcion2",
+        img: "./../assets/descarga-_1_.png",
+        alt: "celu2"
+      },
+      {
+        id: 22,
+        nombre: "celu3",
+        marca: "dEd",
+        descripcion: "descripcion2",
+        img: "./../assets/descarga-_1_.png",
+        alt: "celu2"
+      }
+    ]
+  }
+  celularSeleccionado: any = null
+  verMas(celular: any) {
+    this.celularSeleccionado = celular
   }
 }

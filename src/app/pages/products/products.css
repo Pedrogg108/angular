@@ -1,34 +1,133 @@
-.title{
-    text-align: center;
+/* === Layout general === */
+.container {
+  padding: 2rem;
 }
-.container{
-    display: flex;
-    justify-content: center;
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* === Estilo de las tarjetas === */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.2rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* === Botones === */
+.btn {
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-action {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-action:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* === Modal personalizado === */
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: #fff;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-imagen {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.modal-imagen img {
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.modal-descripcion {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* === Responsividad === */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .row {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 160px;
+  }
+
+  .card-body {
     padding: 1rem;
+  }
 }
-img{
-    height: 8rem;
-    object-fit: cover;
-}
-@media (min-width: 751px) {
-    .card{
-        width: 100%;
-        height: 100%;
-
-    }
-    .title{
-        color: red;
-    }
-}
-@media (max-width: 750px) {
-    .card{
-        width: 100%;
-        height: 100%;
-
-    }
-    .title{
-        color: rgb(0, 128, 17);
-    }
-}
-
