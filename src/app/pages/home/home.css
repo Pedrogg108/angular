@@ -1,7 +1,6 @@
 /* ====== ESTILOS GENERALES ====== */
 body {
   background-color: #f4f6f8;
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -12,7 +11,6 @@ body {
   font-weight: 700;
   margin: 40px 0 30px;
   color: #1a1a1a;
-  letter-spacing: 1px;
 }
 
 /* ====== CONTENEDOR PRINCIPAL ====== */
@@ -28,7 +26,8 @@ body {
   justify-content: center;
   align-items: stretch;
   gap: 2rem;
-  flex-wrap: nowrap; /* <- mantiene los 3 en una sola fila */
+  flex-wrap: nowrap;
+  /* <- mantiene los 3 en una sola fila */
 }
 
 /* ====== TARJETA ====== */
@@ -86,34 +85,37 @@ body {
 }
 
 /* ====== MODAL ====== */
-.modal-content {
-  border-radius: 15px;
-}
 
-.modal-header {
-  background-color: #0066ff;
-  color: #fff;
-}
 
-.modal-title {
-  font-weight: 600;
-}
-
-.modal-body {
-  text-align: center;
-  padding: 2rem;
-}
-
-.img-modal {
-  max-width: 200px;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-/* ====== RESPONSIVE ====== */
-@media (max-width: 992px) {
+@media (max-width: 994px) {
   .row {
-    flex-wrap: wrap; /* En pantallas medianas o chicas se acomodan abajo */
+    flex-wrap: wrap;
+    /* En pantallas medianas o chicas se acomodan abajo */
+    justify-content: space-around;
+  }
+
+  .modal-content {
+    border-radius: 15px;
+  }
+
+  .modal-header {
+    background-color: #0066ff;
+    color: #fff;
+  }
+
+  .modal-title {
+    font-weight: 600;
+  }
+
+  .modal-body {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .img-modal {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
   }
 
   .p-6 {
@@ -130,5 +132,80 @@ body {
     flex: 1 1 100%;
     max-width: 90%;
     margin: 0 auto;
+  }
+}
+
+/* ========================================= */
+/* ====== ESTILOS DEL CARRUSEL (NUEVO) ====== */
+/* ========================================= */
+
+#carouselExampleCaptions {
+  /* Centra el carrusel y limita su ancho */
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+  overflow: hidden;
+  /* Evita que sobresalgan las imágenes */
+}
+
+/* Imágenes del carrusel */
+#carouselExampleCaptions img {
+  height: 500px;
+  /* Ajustá la altura a tu gusto */
+  object-fit: cover;
+  /* Evita distorsión y recorta si es necesario */
+}
+
+/* Indicadores (los puntos de abajo) */
+.carousel-indicators [data-bs-target] {
+  background-color: #555;
+}
+
+.carousel-indicators .active {
+  background-color: #ff6600;
+}
+
+/* Controles (flechas) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Texto sobre las imágenes */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* ====== CARRUSEL RESPONSIVE ====== */
+@media (max-width: 768px) {
+  #carouselExampleCaptions {
+    max-width: 95%;
+  }
+
+  #carouselExampleCaptions img {
+    height: 250px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
   }
 }

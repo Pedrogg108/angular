@@ -31,9 +31,17 @@ export class Home {
         id: 22,
         nombre: "celu3",
         marca: "dEd",
-        descripcion: "descripcion2",
+        descripcion: "descripcion3",
         img: "./../assets/descarga-_1_.png",
-        alt: "celu2"
+        alt: "celu3"
+      },
+      {
+        id:2,
+        nombre:"celu4",
+        marca:"chansung",
+        descripcion:"descripcion4",
+        img:"../../assets/1366_2000.jpg",
+        alt:"celu4"
       }
     ]
   }

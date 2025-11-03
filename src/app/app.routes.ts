@@ -3,6 +3,7 @@ import { Home } from './pages/home/home';
 import { About } from './pages/about/about';
 import { Contact } from './pages/contact/contact';
 import { Products } from './pages/products/products';
+import { Ofertas } from './pages/ofertas/ofertas';
 
 
 export const routes: Routes = [
@@ -12,6 +13,7 @@ export const routes: Routes = [
     {path: `about`,component: About},
     {path: `contact`,component:Contact},
     {path:`products`,component:Products},
+    {path:`ofertas`,component:Ofertas}
     
 
 

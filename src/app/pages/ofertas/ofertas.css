@@ -1,0 +1,72 @@
+#titulo{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#carouselExampleCaptions {
+  /* Centra el carrusel y limita su ancho */
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+  overflow: hidden; /* Evita que sobresalgan las imágenes */
+}
+
+/* Imágenes del carrusel */
+#carouselExampleCaptions img {
+  height: 500px; /* Ajustá la altura a tu gusto */
+  object-fit: cover; /* Evita distorsión y recorta si es necesario */
+}
+
+/* Indicadores (los puntos de abajo) */
+.carousel-indicators [data-bs-target] {
+  background-color: #555;
+}
+
+.carousel-indicators .active {
+  background-color: #ff6600;
+}
+
+/* Controles (flechas) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Texto sobre las imágenes */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* ====== CARRUSEL RESPONSIVE ====== */
+@media (max-width: 768px) {
+  #carouselExampleCaptions {
+    max-width: 95%;
+  }
+
+  #carouselExampleCaptions img {
+    height: 250px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
