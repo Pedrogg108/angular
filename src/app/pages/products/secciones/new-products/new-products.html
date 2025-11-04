@@ -1,18 +1,29 @@
-<p>new-products works!</p>
 <div class="container">
     <h2>nuevo producto</h2>
-     <!-- [formGroup]="formGroup" -->
-    <form>
+    <!-- form grpup es una directiva de formularios reactivos -->
+    <form [formGroup]="nuevoProducto" (ngSubmit)="crearProducto()">
         <div class="mb-3">
-            <label for="nombre" class="form-label">nombre</label>
-            <input id="nombre" type="text" class="form-control">
+            <label for="nombre" class="form-label" id="texto">nombre</label>
+            <!-- formcontrolname atributo que vincule con la informacion de mi propiedad -->
+            <input id="nombre" type="text" class="form-control" formControlName="nombre">
         </div>
         <div class="mb-3">
             <label for="marca" class="form-label">marca</label>
-            <input id="marca" type="text" class="form-control">
+            <input id="marca" type="text" class="form-control" formControlName="marca">
         </div>
-        <div class="mb-3"></div>
-        <div class="mb-3"></div> 
-        <div class="mb-3"></div>
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">descripcion</label>
+            <input id="descripcion" type="text" class="form-control" formControlName="descripcion">
+        </div>
+        <div class="mb-3">
+            <label for="precio" class="form-label">precio</label>
+            <input id="precio" type="number" class="form-control" formControlName="precio">
+        </div>
+        <!-- <div class="mb-3">
+            <label for="img" class="form-label">img</label>
+            <input id="img" type="text" class="form-control">
+        </div> -->
+        <button type="submit" class="btn btn-primary w-100" [disabled]="!nuevoProducto.valid">guardar</button>
+        <!-- disable es para desabilitarlo ante una condición -->
     </form>
 </div>

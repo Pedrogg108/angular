@@ -3,7 +3,8 @@ export interface Celular {
     nombre:string;
     marca:string;
     descripcion:string;
-    img:string;
-    alt:string
+    precio:number;
+    img?:string;
+    alt?:string;//no es una propiedad obligatoria
 }
 

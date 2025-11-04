@@ -16,6 +16,7 @@ export class Home {
         nombre: "celu1",
         marca: "dad",
         descripcion: "descripcion1",
+        precio:1500,
         img: "../../assets/descarga-_1_.png",
         alt: "celu1"
       },
@@ -24,6 +25,7 @@ export class Home {
         nombre: "celu2",
         marca: "dEd",
         descripcion: "descripcion2",
+        precio:1500,
         img: "./../assets/descarga-_1_.png",
         alt: "celu2"
       },
@@ -32,6 +34,7 @@ export class Home {
         nombre: "celu3",
         marca: "dEd",
         descripcion: "descripcion3",
+        precio:1500,
         img: "./../assets/descarga-_1_.png",
         alt: "celu3"
       },
@@ -40,6 +43,7 @@ export class Home {
         nombre:"celu4",
         marca:"chansung",
         descripcion:"descripcion4",
+        precio:1500,
         img:"../../assets/1366_2000.jpg",
         alt:"celu4"
       }
