@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Tarjeta } from '../../models/tarjeta';
+import { Marcas } from './secciones/marcas/marcas';
+import { Home } from '../home/home';
 
 @Component({
   selector: 'app-products',
-  imports: [CommonModule],
+  imports: [CommonModule, Marcas,Home],
   templateUrl: './products.html',
   styleUrl: './products.css'
 })
@@ -12,6 +14,7 @@ export class Products {
   // Propiedad pública: Libre acceso a su contenido
   // Privada : Contenido restringido
   public infoTarjeta: Tarjeta[];
+
   constructor() {
     this.infoTarjeta = [
       {
@@ -43,9 +46,10 @@ export class Products {
       }
     ]
   }
+  marcaSeleccionado: any = null;
   tarjetaSeleccionada: any = null;
 
-  verMas(tarjeta:any){
+  verMas(tarjeta: any) {
     this.tarjetaSeleccionada = tarjeta
   }
 }

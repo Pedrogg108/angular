@@ -5,6 +5,7 @@ import { Contact } from './pages/contact/contact';
 import { Products } from './pages/products/products';
 import { Ofertas } from './pages/ofertas/ofertas';
 import { NewProducts } from './pages/products/secciones/new-products/new-products';
+import { Marcas } from './pages/products/secciones/marcas/marcas';
 
 
 export const routes: Routes = [
@@ -15,7 +16,8 @@ export const routes: Routes = [
     {path: `contact`,component:Contact},
     {path:`products`,component:Products},
     {path:`ofertas`,component:Ofertas},
-    {path:`newProducts`,component:NewProducts}
+    {path:`newProducts`,component:NewProducts},
+    {path:`marcas`,component:Marcas}
     
 
 
