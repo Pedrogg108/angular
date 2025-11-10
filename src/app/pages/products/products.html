@@ -1,4 +1,7 @@
-<div class="container">
+<app-home></app-home>
+<app-tablets></app-tablets>
+<app-accesorios></app-accesorios>
+<!-- <div class="container">
   <div class="row">
     <div class="card" style="width: 18rem;">
       <img src="../../../assets/resize.png" class="card-img-top" alt="...">
@@ -28,12 +31,12 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 
-<div class="container">
-  <div class="row">
+<div class="container text-center">
+  <div class="row g-2">
     <div *ngFor="let i of infoTarjeta" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
       <div class="card" style="width: 18rem;">
         <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
@@ -43,7 +46,7 @@
           <p class="card-text">{{i.descripcion}} - {{i.anualPublicacion}}</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Ver mas
+            Ver mas
           </button>
         </div>
       </div>
@@ -51,11 +54,11 @@
 
 
   </div>
-  
+
 </div>
 
-<app-marcas></app-marcas>
-<app-home></app-home>
+
+
 
 
 <!-- Modal -->

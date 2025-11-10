@@ -96,6 +96,72 @@
     max-width: 90%;
   }
 }
+
+/* =====================================================
+   ====== ESTILOS DEL CARRUSEL ======
+===================================================== */
+#carouselExampleCaptions {
+  margin: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+  overflow: hidden; /* Evita que sobresalgan las imágenes */
+}
+
+/* --- Imágenes del carrusel --- */
+#carouselExampleCaptions img {
+  background-color: white;
+  height: 500px; /* Altura fija para pantallas grandes */
+  object-fit: cover; /* Recorta la imagen sin deformarla */
+}
+.carousel-indicators .active {
+  background-color: #ff6600;
+}
+
+/* --- Controles (flechas) --- */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* --- Texto sobre las imágenes --- */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* =====================================================
+   ====== CARRUSEL RESPONSIVE ======
+===================================================== */
+@media (max-width: 768px) {
+  #carouselExampleCaptions {
+    max-width: 95%;
+  }
+
+  #carouselExampleCaptions img {
+    height: 250px; /* Altura más baja en pantallas pequeñas */
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
 /* =====================================================
    ====== ESTILOS DEL MODAL ======
 ===================================================== */
@@ -127,9 +193,8 @@
 
 /* Imagen dentro del modal */
 .img-modal {
-  margin: 0 auto 1rem auto; /* Centrada */
   width: 100%;
-  max-width: 450px; /* Tamaño máximo en pantallas grandes */
+  max-width: 300px; /* Tamaño máximo en pantallas grandes */
   height: auto; /* Mantiene la proporción original */
   object-fit: contain; /* Evita deformación */
   border-radius: 10px;

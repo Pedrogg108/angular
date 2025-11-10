@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Tarjeta } from '../../models/tarjeta';
-import { Marcas } from './secciones/marcas/marcas';
 import { Home } from '../home/home';
+import { Tablets } from './secciones/tablets/tablets';
+import { Accesorios } from './secciones/accesorios/accesorios';
 
 @Component({
   selector: 'app-products',
-  imports: [CommonModule, Marcas,Home],
+  imports: [CommonModule,Home,Tablets,Accesorios],
   templateUrl: './products.html',
   styleUrl: './products.css'
 })

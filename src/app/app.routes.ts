@@ -5,7 +5,9 @@ import { Contact } from './pages/contact/contact';
 import { Products } from './pages/products/products';
 import { Ofertas } from './pages/ofertas/ofertas';
 import { NewProducts } from './pages/products/secciones/new-products/new-products';
-import { Marcas } from './pages/products/secciones/marcas/marcas';
+import { Tablets } from './pages/products/secciones/tablets/tablets';
+import { Accesorios } from './pages/products/secciones/accesorios/accesorios';
+import { Gamas } from './pages/products/secciones/gamas/gamas';
 
 
 export const routes: Routes = [
@@ -17,7 +19,9 @@ export const routes: Routes = [
     {path:`products`,component:Products},
     {path:`ofertas`,component:Ofertas},
     {path:`newProducts`,component:NewProducts},
-    {path:`marcas`,component:Marcas}
+    {path:`tablet`,component:Tablets},
+    {path:`accesorios`,component:Accesorios},
+    {path:`gamas`,component:Gamas}
     
 
 

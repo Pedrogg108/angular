@@ -12,40 +12,58 @@ export class Home {
   constructor() {
     this.infoCelular = [
       {
-        id: 12,
-        nombre: "celu1",
-        marca: "dad",
-        descripcion: "descripcion1",
-        precio:1500,
-        img: "../../assets/descarga-_1_.png",
-        alt: "celu1"
+        id: 1,
+        nombre: "Samsung A06",
+        marca: "Samsung",
+        descripcion: "64GB/4GB Ram",
+        precio:456000,
+        img: "../../assets/A06.png",
+        alt: "Samsung A06"
       },
       {
-        id: 22,
-        nombre: "celu2",
+        id: 2,
+        nombre: "Moto E14",
+        marca: "Motorola",
+        descripcion: "64GB/2GB Ram",
+        precio:225000,
+        img: "../../assets/motoe14.jpg",
+        alt: "Moto E14"
+      },
+      {
+        id: 3,
+        nombre: "TCL 40SE",
         marca: "dEd",
-        descripcion: "descripcion2",
-        precio:1500,
-        img: "./../assets/descarga-_1_.png",
-        alt: "celu2"
+        descripcion: "128GB/4GB Ram",
+        precio:450000,
+        img: "../../assets/tcl40se.jpg",
+        alt: "TCL 40SE"
       },
       {
-        id: 22,
-        nombre: "celu3",
-        marca: "dEd",
-        descripcion: "descripcion3",
-        precio:1500,
-        img: "./../assets/descarga-_1_.png",
-        alt: "celu3"
+        id:4,
+        nombre:"Samsung Z Flip 6",
+        marca:"Samsung",
+        descripcion:" 512GB/12GB Ram",
+        precio:1950000,
+        img:"../../assets/zflip6.jpg",
+        alt:"Samsung Z Flip"
       },
       {
-        id:2,
-        nombre:"celu4",
-        marca:"chansung",
-        descripcion:"descripcion4",
-        precio:1500,
-        img:"../../assets/1366_2000.jpg",
-        alt:"celu4"
+        id:4,
+        nombre:"Moto G24",
+        marca:"Motorola",
+        descripcion:"128GB/8GB Ram",
+        precio:350000,
+        img:"../../assets/motog24.jpg",
+        alt:"Moto G24"
+      },
+      {
+        id:4,
+        nombre:"S23 FE",
+        marca:"Samsung",
+        descripcion:"256GB/8GB Ram",
+        precio:256000,
+        img:"../../assets/s23fe.jpg",
+        alt:"S23FE"
       }
     ]
   }

@@ -1,35 +1,4 @@
-<h1 id="titulo">Tienda</h1>
-<!-- <div class="row">
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/resize.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-            <a href="#" class="btn btn-action">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/resize.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-            <a href="#" class="btn btn-action">Go somewhere</a>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/resize.png" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-                content.</p>
-            <a href="#" class="btn btn-action">Go somewhere</a>
-        </div>
-    </div>
-</div> -->
-
-<!--CARRUSEL--------------------------------------------------------------------------------------------------------- -->
+<h1 id="titulo">Accesorios</h1>
 <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -41,24 +10,24 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="../../../assets/celus.jpg" class="d-block w-100" alt="...">
+            <img src="../../../assets/ac1.jpeg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Celulares Variados</h5>
-                <p>Todo tipo de celulares y marcas</p>
+                <h5>Multiples accesorios</h5>
+                <p>Auriculares,cargadores,fundas, etc</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="../../../assets/accesorios.png" class="d-block w-100" alt="...">
+            <img src="../../../assets/ac2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Increibles accesorios</h5>
-                <p>Cualquier accesorio para tu dispositivo</p>
+                <h5>Todo tipo de accesorios</h5>
+                <p>Lorem ipsum dolor sit.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="../../../assets/tablets.png" class="d-block w-100" alt="...">
+            <img src="../../../assets/ac3.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Multiples dispositivos</h5>
-                <p>Celulares, tablets y más</p>
+                <h5>Increibles precios</h5>
+                <p>Lorem ipsum dolor sit.</p>
             </div>
         </div>
     </div>
@@ -72,19 +41,17 @@
     </button>
 </div>
 <!--FIN DE CARRUSEL-------------------------------------------------------------------------------------------------------------- -->
-
 <!-- TARJETA--------------------------------------------------------------------------------------------------------------------- -->
- <h1 id="titulo">Celulares</h1>
 <div class="container text-center">
     <div class="row g-2">
-        <div *ngFor="let i of infoCelular" class="col-4">
+        <div *ngFor="let i of infoAccesorios" class="col-4">
             <div class="p-6">
                 <img src="{{ i.img }}" class="card-image-top" alt="{{ i.alt }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ i.nombre }}</h5>
                     <p class="card-text">{{ i.descripcion }}</p>
-                    <button type="button" class="btn btn-action" data-bs-toggle="modal" data-bs-target="#verMasInfo"
-                        (click)="verMas(i)">Ver mas</button>
+                    <button type="button" class="btn btn-action" data-bs-toggle="modal" data-bs-target="#verMasAccesorios"
+                        (click)="verMasAccesorios(i)">Ver mas</button>
                 </div>
             </div>
         </div>
@@ -94,24 +61,25 @@
 
 <!-- Modal -->
 <div class="container">
-    <div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="verMasAccesorios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{celularSeleccionado?.nombre}}</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{accesorioSeleccionado?.nombre}}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-imagen">
-                        <img src="{{celularSeleccionado?.img}}" alt="{{celularSeleccionado?.alt}}" class="img-modal">
+                        <img src="{{accesorioSeleccionado?.img}}" alt="{{accesorioSeleccionado?.alt}}" class="img-modal">
                     </div>
                     <div class="modal-descripcion">
-                        {{celularSeleccionado?.descripcion}}
+                        {{accesorioSeleccionado?.descripcion}}
                     </div>
                     <div class="modal-precio">
-                        ${{celularSeleccionado?.precio}}
+                        ${{accesorioSeleccionado?.precio}}
                     </div>
                     <div class="modal-marca">
-                        {{celularSeleccionado?.marca}}
+                        {{accesorioSeleccionado?.marca}}
                     </div>
 
                 </div>

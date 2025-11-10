@@ -1,49 +1,32 @@
-#navegador{
-    background-color: rgba(163, 255, 250, 0.507);
+#navegador {
+  background-color: #d9f3dc
 }
 
-.card:hover{
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
+#container {
+  background-color: #d6e7d1;
 }
-body{
-    background-color: rgba(255, 255, 255, 0.507);
-}
-
-.btn-action:hover{
-    background-color: rgb(255, 127, 80);
-    color: white;
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
-}
-
-*{
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+* {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 @media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
-    
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
-.footer{
-    background-color: rgba(163, 255, 250, 0.507);
-    padding: 1rem;
-    text-align: center;
-}
 /* ----- Estilos generales del footer ----- */
 .footer {
   background-color: #222;
   color: #f1f1f1;
   padding: 40px 0 10px;
-  font-family: 'Roboto', sans-serif;
   text-align: center;
+  margin-top: 50px;
 }
 
 /* ----- Contenedor principal ----- */
@@ -51,7 +34,6 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -108,4 +90,3 @@ body{
   font-size: 14px;
   margin-top: 20px;
 }
-

@@ -1,9 +1,28 @@
-<p>contact works!</p>
-<p>No se puede contactar <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perferendis molestiae
-    voluptatum fuga voluptatibus eaque quas vitae laborum quaerat! Rem consectetur repellat libero, est mollitia
-    obcaecati. Praesentium omnis, fugit odit architecto nostrum, veritatis, magnam alias illum voluptatibus deserunt
-    quasi harum porro minima tempora. Inventore similique voluptatibus eligendi ipsum molestiae tempora in rem magni
-    maiores sapiente. Ratione omnis molestias labore ab recusandae facere quos, ipsam corrupti natus! Ad dolore, quo
-    minus aperiam accusamus recusandae iste amet corporis alias, eius id quas excepturi iure ratione? Repellendus
-    repellat unde culpa explicabo sequi porro neque aut. Eveniet, odio veniam! Commodi, harum reiciendis. Cum,
-    error.<br><br><br><br><br><br><br></p>
+<h1 id="titulo">Formulario de Quejas del Cliente</h1>
+<form>
+    <div class="mb-3">
+        <label for="nombre" class="form-label" id="texto">Nombre</label>
+        <input id="nombre" type="text" class="form-control" placeholder="Nombre">
+    </div>
+    <div class="mb-3">
+        <label for="corrro" class="form-label" id="texto">Correo electrónico</label>
+        <input type="email" id="correo" class="form-control" placeholder="Correo electrónico">
+    </div>
+    <div class="mb-3">
+        <label for="motivo">Motivo de la queja:</label>
+        <select id="motivo" name="motivo" required>
+            <option value="">Seleccionar...</option>
+            <option value="producto">Producto defectuoso</option>
+            <option value="atencion">Mala atención</option>
+            <option value="demora">Demora en entrega</option>
+            <option value="otro">Otro</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="mensaje">Descripcion de la queja:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Describe el problema..."></textarea>
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn-enviar">Enviar queja</button>
+    </div>
+</form>
