@@ -1,4 +1,45 @@
-<h1 id="titulo">Formulario de Quejas del Cliente</h1>
+<div class="container">
+    <h1 id="titulo">Formulario de Quejas del Cliente</h1>
+
+    <!-- Formulario reactivo -->
+    <form [formGroup]="formQueja" (ngSubmit)="enviarQueja()">
+
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input id="nombre" type="text" class="form-control" formControlName="nombre" placeholder="Nombre">
+        </div>
+
+        <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input id="correo" type="email" class="form-control" formControlName="correo"
+                placeholder="Correo electrónico">
+        </div>
+
+        <div class="mb-3">
+            <label for="motivo">Motivo de la queja:</label>
+            <select id="motivo" class="form-control" formControlName="motivo" required>
+                <option value="">Seleccionar...</option>
+                <option value="producto">Producto defectuoso</option>
+                <option value="atencion">Mala atención</option>
+                <option value="demora">Demora en entrega</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="mensaje">Descripción de la queja:</label>
+            <textarea id="mensaje" class="form-control" formControlName="mensaje"
+                placeholder="Describe el problema..."></textarea>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary w-100" [disabled]="!formQueja.valid">
+                Enviar queja
+            </button>
+        </div>
+    </form>
+</div>
+<!-- <h1 id="titulo">Formulario de Quejas del Cliente</h1>
 <form>
     <div class="mb-3">
         <label for="nombre" class="form-label" id="texto">Nombre</label>
@@ -25,4 +66,4 @@
     <div class="mb-3">
         <button type="submit" class="btn-enviar">Enviar queja</button>
     </div>
-</form>
+</form> -->

@@ -99,7 +99,7 @@
 /* =====================================================
    ====== ESTILOS DEL CARRUSEL ======
 ===================================================== */
-#carouselExampleCaptions {
+#ofertasAccesorios {
   margin: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
@@ -107,7 +107,7 @@
 }
 
 /* --- Imágenes del carrusel --- */
-#carouselExampleCaptions img {
+#ofertasAccesorios img {
   background-color: white;
   height: 500px; /* Altura fija para pantallas grandes */
   object-fit: cover; /* Recorta la imagen sin deformarla */
@@ -145,11 +145,11 @@
    ====== CARRUSEL RESPONSIVE ======
 ===================================================== */
 @media (max-width: 768px) {
-  #carouselExampleCaptions {
+  #ofertasAccesorios {
     max-width: 95%;
   }
 
-  #carouselExampleCaptions img {
+  #ofertasAccesorios img {
     height: 250px; /* Altura más baja en pantallas pequeñas */
   }
 
