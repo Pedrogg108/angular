@@ -48,7 +48,7 @@ export class Home {
         alt:"Samsung Z Flip"
       },
       {
-        id:4,
+        id:5,
         nombre:"Moto G24",
         marca:"Motorola",
         descripcion:"128GB/8GB Ram",
@@ -57,7 +57,7 @@ export class Home {
         alt:"Moto G24"
       },
       {
-        id:4,
+        id:6,
         nombre:"S23 FE",
         marca:"Samsung",
         descripcion:"256GB/8GB Ram",

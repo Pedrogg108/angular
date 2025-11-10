@@ -32,7 +32,7 @@
 /* ----- Contenedor principal ----- */
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;/*Los elementos bajan a la siguente linea si no entran*/
   justify-content: space-around;
   max-width: 1000px;
   margin: 0 auto;
